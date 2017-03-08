@@ -1,0 +1,15 @@
+doctype
+html(lang=config.language)
+    head
+        include head
+    body
+        nav.navigation
+            ul
+                li a(href=url_for())
+                    img(src=url_for(theme.logo) alt="logo")
+                include navigations
+        main.content(role="main")
+            include container
+        footer.footer
+            include copyright
+        include scripts
